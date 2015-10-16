@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python26
 
 import ConfigParser
 import sys
@@ -124,7 +124,7 @@ def main():
 
             output = None
             if 'output' not in job_json:
-                raise("Site %s file %s doesn't have a configured 'output' path." % (site_name, job_file))
+                raise Exception("Site %s file %s doesn't have a configured 'output' path." % (site_name, job_file))
             else:
                 output = job_json['output']
 
@@ -147,6 +147,7 @@ def main():
             (exit_value, stdout, stderr) = executor.run_command(command)
 
             if exit_value != 0:
-                raise("Error with site %s." % site_name)
+                sys.stderr.write("Error with site %s." % site_name)
+                sys.stderr.write(stderr)
 
 main()
