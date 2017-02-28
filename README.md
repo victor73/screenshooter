@@ -28,7 +28,7 @@ The URL to capture. Required.
 
 ### useragent
 
-THe useragent to use when requesting the webpage. Some websites behave
+The useragent to use when requesting the webpage. Some websites behave
 differently with different browsers/clients. This allows the developer
 to have fine control of that.
 
