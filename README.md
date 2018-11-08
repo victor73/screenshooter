@@ -1,5 +1,5 @@
 # screenshooter
-Simple tool to take snapshots of websites for archival purposes. Python and Phantomjs. Modified from phantomjs-screenshots.
+Simple tool to take snapshots of websites for archival purposes. Modified from phantomjs-screenshots.
 
 ## Example Job File
 
